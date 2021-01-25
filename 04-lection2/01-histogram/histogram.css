@@ -1,0 +1,49 @@
+.histogram p {
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.histogram h4 {
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+
+.histogram {
+  padding: 24px;
+  border: 1px solid #ACB5BD;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.raw {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .histagra, .cal {
+  display: flex;
+
+} */
+.container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.histagram__rectangle {
+  width: 100%;
+  margin-right: 1px;
+  background: #4263EB;
+}
+
+.histagram__rectangle:last-child {
+  margin-right: 0;
+}
