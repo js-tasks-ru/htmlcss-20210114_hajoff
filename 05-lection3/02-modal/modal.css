@@ -1,0 +1,57 @@
+#modal {
+  display: none;
+}
+
+.modal__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #C4C4C4;
+  opacity: 0.5;
+}
+
+.modal__window {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 30px 40px;
+  margin: 40px;
+}
+
+#modal-open {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  min-width: 189px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  background: #4263EB;
+  border-radius: 8px;
+}
+
+#modal-close {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#modal-close:after {
+  content: "\00d7";
+  font-size: 1.5rem;
+  color: #495057;
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #334D6E;
+}
+
+.modal__text {
+  color: #495057;
+}
