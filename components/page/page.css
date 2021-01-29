@@ -1,9 +1,20 @@
+@import url('../tooltip.css');
+@import url('../modal.css');
+@import url('../avatar.css');
+@import url('../calendar.css');
+@import url('../histogram.css');
+
 :root {
   --main-text-color: #212429;
+  --modal-title-color: #334D6E;
+  --modal-text-color: #495057;
   --main: white;
   --main-container-bg-color: #F9FAFC;
   --primary: #4263EB;
   --secondary: #7048E8;
+  --text-into-primary: #DDE2E5;
+  --calendar-day-text: #90A0B7;
+  --border: #ACB5BD;
 }
 
 * {
@@ -74,6 +85,14 @@ body {
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 12px;
   position: relative;
+}
+
+.flex__card-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 21px - 30px);
+  padding: 24px;
 }
 
 .flex__card-title {

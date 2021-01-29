@@ -10,7 +10,9 @@
   <title>Home work</title>
 </head>
 
+
 <body>
+
   <header class="main-page__header">
     <h1 class="main-page__header-title">Reusable component library </h1>
   </header>
@@ -18,7 +20,12 @@
     <div class="flex__wrapper">
       <div class="flex__container">
         <div class="flex__card">
-          <div class="flex__card-preview"></div>
+          <div class="flex__card-preview">
+            <div class="tooltip">
+              <div class="tooltip__menu">Helper Text</div>
+              <img src="./assets/svg/question.svg" alt="icon">
+            </div>
+          </div>
           <h3 class="flex__card-title">Tooltip</h3>
         </div>
       </div>
@@ -30,25 +37,109 @@
       </div>
       <div class="flex__container">
         <div class="flex__card">
-          <div class="flex__card-preview"></div>
+          <div class="flex__card-preview">
+            <div class="calendar">
+              <div class="calendar__mounth">January 2021</div>
+              <div class="calendar__day-name">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+              </div>
+              <div class="date__grid">
+                <div class="date__grid-item"><time datetime="2020-01-01">1</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-02">2</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-03">3</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-04">4</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-05">5</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-06">6</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-07">7</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-08">8</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-09">9</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-10">10</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-11">11</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-12">12</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-13">13</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-14">14</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-15">15</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-16">16</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-17">17</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-18">18</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-19">19</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-20">20</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-21">21</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-22">22</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-23">23</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-24">24</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-25">25</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-26">26</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-27">27</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-28">28</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-29">29</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-30">30</time></div>
+                <div class="date__grid-item"><time datetime="2020-01-31">31</time></div>
+              </div>
+            </div>
+          </div>
           <h3 class="flex__card-title">Calendar</h3>
         </div>
       </div>
       <div class="flex__container">
         <div class="flex__card">
-          <div class="flex__card-preview"></div>
+          <div class="flex__card-preview">
+            <button id="modal-open">Open modal</button>
+            <div id="modal">
+              <div class="modal__window">
+                <h2 class="modal__title">Modal title</h2>
+                <p class="modal__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus voluptate accusamus aspernatur.
+                  Dolor, fuga! Sed provident suscipit, maxime ipsum, minus praesentium eius dolores excepturi earum
+                  similique error aperiam dolore qui molestiae nesciunt. Harum praesentium officia magni nihil rem odio
+                  iste architecto facere placeat autem quia, sunt non quaerat eius asperiores.
+                </p>
+                <img id="modal-close" src="./assets/svg/close.svg" alt="close modal icon">
+              </div>
+            </div>
+          </div>
           <h3 class="flex__card-title">Modal dialog</h3>
         </div>
       </div>
       <div class="flex__container">
         <div class="flex__card">
-          <div class="flex__card-preview"></div>
+          <div class="flex__card-preview">
+            <div class="histogram">
+              <div class="histogram__info">
+                <div>
+                  <p class="histogram__text">Total orders</p>
+                  <h4 class="histogram__subtitle">5321</h4>
+                </div>
+                <div class="link-wrapper">
+                  <p class="histogram__text"><a href="#" class="histogram__link">View all</a></p>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="histagram__rectangle" style="height: 20px;"></div>
+                <div class="histagram__rectangle" style="height: 40px;"></div>
+                <div class="histagram__rectangle" style="height: 10px;"></div>
+                <div class="histagram__rectangle" style="height: 100px;"></div>
+                <div class="histagram__rectangle" style="height: 90px;"></div>
+                <div class="histagram__rectangle" style="height: 90px;"></div>
+                <div class="histagram__rectangle" style="height: 90px;"></div>
+              </div>
+            </div>
+          </div>
           <h3 class="flex__card-title">Histogram</h3>
         </div>
       </div>
       <div class="flex__container">
         <div class="flex__card">
-          <div class="flex__card-preview"></div>
+          <div class="flex__card-preview">
+            <img class="avatar" src="./assets/images/avatar-200.jpg" alt="avatar">
+          </div>
           <h3 class="flex__card-title">Avatar</h3>
         </div>
       </div>
@@ -62,6 +153,13 @@
       into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the
       categories you're most curious about.</div>
   </footer>
+
+
 </body>
+
+
+
+
+<script src="./05-lection3/02-modal/index.js"></script>
 
 </html>

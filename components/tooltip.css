@@ -1,0 +1,32 @@
+.tooltip {
+  position: relative;
+}
+
+.tooltip__menu {
+  display: block;
+  position: absolute;
+  min-width: 120px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, calc(-8px - 100%));
+  padding: 13px 21px;
+  background: var(--primary);
+  color: var(--text-into-primary);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 10px;
+  display: none;
+}
+
+.tooltip__menu:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  border: 14px solid transparent;
+  border-top: 6px solid var(--primary);
+}
+
+.tooltip:hover .tooltip__menu {
+  display: block;
+}
