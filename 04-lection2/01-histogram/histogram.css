@@ -24,7 +24,7 @@
   border-radius: 8px;
 }
 
-.raw {
+.histogram__info {
   display: flex;
   justify-content: space-between;
 }
