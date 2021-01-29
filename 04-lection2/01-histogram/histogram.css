@@ -1,6 +1,18 @@
+:root {
+  --primary: #4263EB;
+  --border: #ACB5BD;
+}
+
+.histogram {
+  width: 100%;
+  padding: 24px;
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
 .histogram__text {
   margin: 0;
-  font-family: Inter;
   font-size: 16px;
   line-height: 24px;
 }
@@ -11,17 +23,8 @@
 
 .histogram__subtitle {
   margin: 0;
-  font-family: Inter;
   font-size: 20px;
   line-height: 26px;
-}
-
-
-.histogram {
-  padding: 24px;
-  border: 1px solid #ACB5BD;
-  box-sizing: border-box;
-  border-radius: 8px;
 }
 
 .histogram__info {
@@ -37,7 +40,7 @@
 .histagram__rectangle {
   width: 100%;
   margin-right: 1px;
-  background: #4263EB;
+  background: var(--primary);
 }
 
 .histagram__rectangle:last-child {
