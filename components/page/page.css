@@ -1,3 +1,11 @@
+:root {
+  --main-text-color: #212429;
+  --main: white;
+  --main-container-bg-color: #F9FAFC;
+  --primary: #4263EB;
+  --secondary: #7048E8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +15,8 @@
 body {
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
-  color: #212429;
+  color: var(--main-text-color);
+  background-color: var(--main);
 }
 
 .main-page__header {
@@ -16,7 +25,8 @@ body {
 
 .main-page__main {
   min-height: calc(100vh - 237px - 384px);
-  background: #F9FAFC;
+  background: var(--main-container-bg-color);
+  padding: 68px 165px;
 }
 
 .main-page__footer {
@@ -41,5 +51,37 @@ body {
 
 .main-page__footer-text {
   max-width: 640px;
-  margin: 0 auto;
+  margin: 32px auto;
+}
+
+.flex__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex__container {
+  width: 33.33%;
+  min-width: 350px;
+  padding: 15px;
+}
+
+.flex__card {
+  background: var(--main);
+  width: 100%;
+  height: 367px;
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  position: relative;
+}
+
+.flex__card-title {
+  position: absolute;
+  font-weight: 500;
+  font-size: 21px;
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  bottom: 30px;
 }
