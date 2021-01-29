@@ -1,0 +1,13 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  object-fit: cover;
+}
