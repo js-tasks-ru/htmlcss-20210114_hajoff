@@ -30,3 +30,8 @@
 .tooltip:hover .tooltip__menu {
   display: block;
 }
+
+.tooltip__icon {
+  width: 24px;
+  height: 24px;
+}
