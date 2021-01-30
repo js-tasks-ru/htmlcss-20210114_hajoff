@@ -60,6 +60,10 @@
   margin-bottom: 4px;
 }
 
+.page__menu-link:last-child {
+  margin-top: 30px;
+}
+
 .page__menu-link:link {
   text-decoration: none;
 }
