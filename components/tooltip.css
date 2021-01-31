@@ -1,9 +1,9 @@
 .tooltip {
   position: relative;
+  cursor: pointer;
 }
 
 .tooltip__menu {
-  display: block;
   position: absolute;
   min-width: 120px;
   text-align: center;
