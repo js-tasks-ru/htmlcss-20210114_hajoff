@@ -46,3 +46,14 @@
 .calendar__grid-item:nth-child(22) {
   background: rgba(160, 177, 245, .2)
 }
+
+.calendar-mini,
+.calendar {
+  font-size: 9px;
+  padding: 14px;
+}
+
+.calendar-mini .calendar__mounth {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
