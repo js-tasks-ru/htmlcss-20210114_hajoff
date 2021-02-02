@@ -1,3 +1,4 @@
+@import url('../variables.css');
 @import url('../tooltip.css');
 @import url('../modal.css');
 @import url('../avatar.css');
@@ -6,20 +7,6 @@
 @import url('../logo.css');
 @import url('../container.css');
 @import url('../border.css');
-
-:root {
-  --main-text-color: #212429;
-  --modal-title-color: #334D6E;
-  --modal-text-color: #495057;
-  --main: white;
-  --main-container-bg-color: #F9FAFC;
-  --primary: #4263EB;
-  --secondary: #7048E8;
-  --text-into-primary: #DDE2E5;
-  --calendar-day-text: #90A0B7;
-  --border: #ACB5BD;
-  --active-link: #D84910;
-}
 
 * {
   margin: 0;

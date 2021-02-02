@@ -33,27 +33,23 @@
   grid-column: 5;
 }
 
-.calendar__grid-item:nth-child(18),
-.calendar__grid-item:nth-child(23) {
+.calendar__grid-item_active-first,
+.calendar__grid-item_active-last {
   background: var(--primary);
   color: var(--text-into-primary);
 }
 
-
-.calendar__grid-item:nth-child(19),
-.calendar__grid-item:nth-child(20),
-.calendar__grid-item:nth-child(21),
-.calendar__grid-item:nth-child(22) {
+.calendar__grid-item_active {
   background: rgba(160, 177, 245, .2)
 }
 
-.calendar-mini,
+.calendar__mini,
 .calendar {
   font-size: 9px;
   padding: 14px;
 }
 
-.calendar-mini .calendar__mounth {
+.calendar__mini .calendar__mounth {
   font-size: 14px;
   margin-bottom: 14px;
 }

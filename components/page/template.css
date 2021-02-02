@@ -1,13 +1,6 @@
+@import url('../variables.css');
 @import url('../logo.css');
 @import url('../container.css');
-
-:root {
-  --main: white;
-  --border: #ACB5BD;
-  --main-container-bg-color: #F9FAFC;
-  --main-text-color: #212429;
-  --active-link: #D84910;
-}
 
 * {
   padding: 0;
