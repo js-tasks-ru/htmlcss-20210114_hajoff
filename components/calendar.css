@@ -1,18 +1,7 @@
-:root {
-  --modal-title-color: #334D6E;
-  --calendar-day-text: #90A0B7;
-  --primary: #4263EB;
-  --text-into-primary: #DDE2E5;
-  --border: #ACB5BD;
-}
-
 .calendar {
   position: relative;
   text-align: center;
   box-sizing: border-box;
-  padding: 28px 30px 40px 30px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
   padding: 28px 30px 40px 30px;
 }
 
@@ -44,16 +33,23 @@
   grid-column: 5;
 }
 
-.calendar__grid-item:nth-child(18),
-.calendar__grid-item:nth-child(23) {
+.calendar__grid-item_active-first,
+.calendar__grid-item_active-last {
   background: var(--primary);
   color: var(--text-into-primary);
 }
 
-
-.calendar__grid-item:nth-child(19),
-.calendar__grid-item:nth-child(20),
-.calendar__grid-item:nth-child(21),
-.calendar__grid-item:nth-child(22) {
+.calendar__grid-item_active {
   background: rgba(160, 177, 245, .2)
+}
+
+.calendar__mini,
+.calendar {
+  font-size: 9px;
+  padding: 14px;
+}
+
+.calendar__mini .calendar__mounth {
+  font-size: 14px;
+  margin-bottom: 14px;
 }

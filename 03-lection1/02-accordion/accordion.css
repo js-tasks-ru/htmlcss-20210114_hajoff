@@ -1,1 +1,57 @@
 /* Стилизация аккордеона */
+:root {
+  --main-text-color: #212429;
+  --modal-text-color: #495057;
+  --border: #ACB5BD;
+  --main: white;
+}
+
+.wrapper__item {
+  margin-bottom: 0.5rem;
+}
+
+.accordion {
+  position: relative;
+  background: var(--main);
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px 32px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.accordion__arrow {
+  color: var(--modal-text-color);
+  width: 18px;
+  height: 10px;
+  position: absolute;
+  right: 32px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion[open] .accordion__arrow {
+  transform: rotate(180deg);
+}
+
+.accordion__summary {
+  display: block;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.accordion__summary:focus {
+  outline: 0;
+}
+
+.accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion:last-child {
+  margin-bottom: 0;
+}
+
+.accordion__text {
+  color: var(--modal-text-color);
+}

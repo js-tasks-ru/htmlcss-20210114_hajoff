@@ -1,15 +1,3 @@
-:root {
-  --primary: #4263EB;
-  --text-into-primary: #DDE2E5;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .tooltip {
   position: relative;
   cursor: pointer;
