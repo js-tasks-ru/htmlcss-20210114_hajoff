@@ -1,0 +1,75 @@
+@import url('../../components/variables.css');
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.margin-wrapper {
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox__control {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.checkbox__state {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--text-into-primary);
+  border-radius: 4px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.checkbox__legend {
+  margin: 0 0 0 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.checkbox__icon {
+  display: none;
+  position: absolute;
+  width: 15px;
+  height: 13px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox__control:checked~.checkbox__state {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.checkbox__control:checked~.checkbox__state .checkbox__icon {
+  display: block;
+}
+
+.checkbox__control:focus~.checkbox__legend {
+  text-decoration-line: underline;
+}
+
+.checkbox__control:disabled~.checkbox__state {
+  background-color: var(--text-into-primary);
+}
+
+.checkbox__control:disabled~.checkbox__legend {
+  color: var(--text-into-primary);
+}
