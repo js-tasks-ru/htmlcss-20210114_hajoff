@@ -7,6 +7,9 @@
 @import url('../logo.css');
 @import url('../container.css');
 @import url('../border.css');
+@import url('../tabs.css');
+@import url('../checkbox.css');
+@import url('../radio.css');
 
 * {
   margin: 0;
@@ -21,13 +24,21 @@ body {
   background-color: var(--main);
 }
 
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+}
+
 .calendar__wrapper {
   max-height: 250px;
   overflow: scroll;
 }
 
 .main-page__header {
-  height: 237px;
+  height: 153px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -49,6 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   max-height: 374px;
+  width: 100%;
 }
 
 .card__body {
