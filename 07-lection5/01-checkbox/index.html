@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <!-- Страница чекбокса -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./checkbox.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./checkbox.css">
+</head>
+
+<body>
+    <svg style='display: none'>
+        <defs>
+            <symbol id="checkbox" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </symbol>
+        </defs>
+    </svg>
+
+    <div class="wrapper">
+        <div class="margin-wrapper">
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__control">
+                <div class="checkbox__state">
+                    <svg class="checkbox__icon">
+                        <use xlink:href='#checkbox' />
+                    </svg>
+                </div>
+                <p class="checkbox__legend">Default</p>
+            </label>
+        </div>
+
+        <div class="margin-wrapper">
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__control" checked>
+                <div class="checkbox__state">
+                    <svg class="checkbox__icon">
+                        <use xlink:href='#checkbox' />
+                    </svg>
+                </div>
+                <p class="checkbox__legend">Checked</p>
+            </label>
+        </div>
+
+        <div class="margin-wrapper">
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__control" disabled>
+                <div class="checkbox__state">
+                    <svg class="checkbox__icon">
+                        <use xlink:href='#checkbox' />
+                    </svg>
+                </div>
+                <p class="checkbox__legend">Disabled</p>
+            </label>
+        </div>
+    </div>
+</body>
+
 </html>

@@ -1,0 +1,35 @@
+.tabs input[type=radio] {
+  display: none;
+}
+
+.tabs__scroller {
+  background-color: var(--main);
+}
+
+.tabs__input_all:checked~.tabs__scroller label:nth-child(1),
+.tabs__input_atoms:checked~.tabs__scroller label:nth-child(2),
+.tabs__input_molecules:checked~.tabs__scroller label:nth-child(3),
+.tabs__input_organisms:checked~.tabs__scroller label:nth-child(4) {
+  border-color: black;
+  color: black;
+}
+
+.tabs__scroller label {
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 0;
+  border-bottom: 5px solid transparent;
+  color: var(--label-color);
+  margin-right: 40px;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__input_all:checked~.container .tabs__content,
+.tabs__input_atoms:checked~.container .tabs__content_atoms,
+.tabs__input_molecules:checked~.container .tabs__content_molecules,
+.tabs__input_organisms:checked~.container .tabs__content_organisms {
+  display: flex;
+}

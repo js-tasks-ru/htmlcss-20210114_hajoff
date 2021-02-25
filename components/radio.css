@@ -1,21 +1,3 @@
-@import url('../../components/variables.css');
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.margin-wrapper {
-  margin-bottom: 16px;
-}
-
 .radio {
   display: flex;
   justify-content: flex-start;

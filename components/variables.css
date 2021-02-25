@@ -2,6 +2,7 @@
   --main-text-color: #212429;
   --modal-title-color: #334D6E;
   --modal-text-color: #495057;
+  --label-color: #ACB5BD;
   --main: white;
   --main-container-bg-color: #F9FAFC;
   --primary: #4263EB;
@@ -10,4 +11,5 @@
   --calendar-day-text: #90A0B7;
   --border: #ACB5BD;
   --active-link: #D84910;
+  --disabled-checkbox: #C4CCD1
 }

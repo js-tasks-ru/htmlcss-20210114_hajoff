@@ -1,0 +1,85 @@
+@import url('../../components/variables.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.margin-wrapper {
+  margin-bottom: 16px;
+}
+
+.toggler {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggler__control {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.toggler__state {
+  position: relative;
+  border: 1px solid var(--text-into-primary);
+  border-radius: 1rem;
+  width: 52px;
+  height: 28px
+}
+
+.toggler__state:before {
+  content: '';
+  position: absolute;
+  background-color: var(--text-into-primary);
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggler__legend {
+  margin: 0 0 0 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.toggler__control:checked~.toggler__state {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.toggler__control:checked~.toggler__state:before {
+  left: auto;
+  right: 2px;
+  background-color: var(--main);
+}
+
+.toggler__control:focus~.toggler__legend {
+  text-decoration-line: underline;
+}
+
+.toggler__control:disabled~.toggler__state {
+  background-color: var(--text-into-primary);
+}
+
+.toggler__control:disabled~.toggler__state:before {
+  background-color: var(--disabled-checkbox);
+}
+
+.toggler__control:disabled~.toggler__legend {
+  color: var(--text-into-primary);
+}
